@@ -1,0 +1,15 @@
+#LaTex temporales
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex
+*.bbl
+*.blg
+*.bcf
+*.xml
+
+# VS Code
+*.vscode/

@@ -1,0 +1,72 @@
+\documentclass{replab}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{biblatex}
+
+% --- Información del documento ---
+\title{Laboratorio de Electrónica}
+\author{Alarcón Pérez Bruno}
+
+\date{\today}
+\subtitle={Práctica X}
+\email={\href{mailto:bruno_alarcon@ciencias.unam.mx}{\color{principaluno}\texttt{bruno\_alarcon@ciencias.unam.mx}}}
+\subject={Laboratorio de Electrónica}
+
+\setlength{\columnsep}{14pt}
+
+% --- Archivo de bibliografía ---
+\addbibresource{repbib.bib}
+
+% --- Inicio del documento ---
+\begin{document}
+	
+	\pagestyle{fancy}
+	\unspacedoperators
+	
+% --- Título ---
+	\twocolumn[
+		\begin{center}
+			\maketitle
+				
+			{\begin{tcolorbox}[colframe=white, colback=principaldos, arc=8pt]
+				\begin{onecolabstract}
+					Lo que se hizo, lo que se buscaba observar, lo que se observó
+					y conlcusión final.
+
+					\medskip
+				\end{onecolabstract}
+
+			\end{tcolorbox}}
+
+			\smallskip
+		\end{center}
+	]
+	
+% --- Cuerpo del reporte ---
+	
+	\section{Montaje}
+
+    Incluir el esquema del circuito, si es necesaria alguna foto del mismo
+	y añadir una breve explicación de este.
+
+	\section{Mediciones y observaciones}
+
+    Tablas, anotaciones interesantes de lo observado ya sea en el montaje o en las mediciones.
+
+	\section{Resultados y Discución}
+
+    Gráficas, comparaciones y análisis de esto; coincidencias y/o discrepancias con la teoría,
+	posibles errores.
+
+	\section{Conclusión}
+
+    Breve texto del aprendizaje final.
+
+	% \printbibliography
+
+	\appendix
+    \section{Primer apéndice}
+
+    APÉNDICES
+	
+\end{document}
