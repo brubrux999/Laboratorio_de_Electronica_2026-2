@@ -46,17 +46,56 @@
 	
 	\section{Montaje}
 
-    Incluir el esquema del circuito, si es necesaria alguna foto del mismo
-	y añadir una breve explicación de este.
+    Se armó un circuito en una protoboard en el cual se conectaron una fuente DC y 11 resistencias
+	de dos valores distintos aproximadamente; $560\Omega$ y $820\Omega$, como lo muestra el esquema siguiente.
+
+	\begin{figure}[!ht]
+		\centering
+		\includegraphics[width=0.45\textwidth]{circuitos/Circuito 1.jpg}
+		\caption{Esquema del circuito armado en la protoboard}
+		\label{fig:circuito1}
+	\end{figure}
 
 	\section{Mediciones y observaciones}
 
-    Tablas, anotaciones interesantes de lo observado ya sea en el montaje o en las mediciones.
+    Antes de pasar a las mediciones en el circuito, se realizaron los calculos teóricos para los valores
+	de voltaje, corriente y potencia para cada resistencia, el desarrollo se encuentra en el Apéndice \ref{apx:1}.
+
+	Para la medicón de los valores mencionados, se usó un multímetro digital y un par de cables con conexión banana-caiman.\\
+	Primero se midió la resistencia de cada resistencia para corroborar su valor, posteriormente, para el voltaje, la conexión a cada resistencia
+	fue en paralelo, es decir, en cada "patita" de estas, en cambio, la corriente se midió en serie de modo que se abrió el circuito, ya sea
+	del lado izquierdo o derecho de la resistencia, para incluir el multímetro en este. Finalmente la potencia se obtuvo multiplicando el voltaje
+	por la corriente. Los resultados se muestran en la siguiente tabla:
+
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{|c|c|c|c|c|}
+		\hline
+			& $\Omega$ & V [$V$] & I [$mA$] & P [$mW$] \\ \hline
+		R1  & 556   & 3.4         & 6.1      & 20.7         \\ \hline
+		R2  & 822   & 3.3         & 4.1      & 13.5         \\ \hline
+		R3  & 560   & 3.4         & 6.1      & 20.7         \\ \hline
+		R4  & 818   & 1.7         & 2.1      & 3.6          \\ \hline
+		R5  & 557   & 0.9         & 1.6      & 1.4          \\ \hline
+		R6  & 823   & 0.7         & 0.9      & 0.6          \\ \hline
+		R7  & 556   & 0.7         & 1.3      & 0.9          \\ \hline
+		R8  & 818   & 0.4         & 0.5      & 0.2          \\ \hline
+		R9  & 562   & 0.3         & 0.5      & 0.2          \\ \hline
+		R10 & 821   & 0.2         & 0.2      & 0.04         \\ \hline
+		R11 & 555   & 0.2         & 0.3      & 0.06         \\ \hline
+		\end{tabular}
+		\caption{
+			Tabla con los valores medidos de resistencia, voltaje, corriente y
+			potencia en cada resistencia, respectivamente, del circuito mostrado en el Esquema \ref{fig:circuito1}.
+		}
+		\label{tab:circuito1}
+	\end{table}
 
 	\section{Resultados y Discución}
 
     Gráficas, comparaciones y análisis de esto; coincidencias y/o discrepancias con la teoría,
 	posibles errores.
+	AUNQUE SE USARON DIFERENTES RESISTENCIAS (TEORICO Y EXPERIMENTAL) SE OBTUVO UN ORDENAMIENTO SIMILAR, VALORES ALTOS EN LAS PRIMERAS QUE DIMUNUYE A MEDIDA QU EL CIRCUITO AVANZA
 
 	\section{Conclusión}
 
@@ -64,9 +103,34 @@
 
 	% \printbibliography
 
+	\onecolumn
 	\appendix
-    \section{Primer apéndice}
+    \section{Cálculo de valores teóricos}
+	\label{apx:1}
 
-    APÉNDICES
+    \begin{figure}[!ht]
+		\centering
+		\begin{subfigure}[b]{0.40\linewidth}
+			\includegraphics[width=\linewidth]{imagenes/20260215_150617.jpg}
+		\end{subfigure}
+		\hspace{0.2mm}
+		\begin{subfigure}[b]{0.40\linewidth}
+			\includegraphics[width=\linewidth]{imagenes/20260215_150701.jpg}
+		\end{subfigure}
+
+		\begin{subfigure}[b]{0.40\linewidth}
+			\includegraphics[width=\linewidth]{imagenes/20260215_150729.jpg}
+		\end{subfigure}
+		\hspace{0.2mm}
+		\begin{subfigure}[b]{0.40\linewidth}
+			\includegraphics[width=\linewidth]{imagenes/20260215_150850.jpg}
+		\end{subfigure}
+		
+		\caption{
+			Desarrollo del método de Maxwell para el cálculo del voltaje,
+			corriente y potencia de cada resistencia.
+		}
+		\label{fig:mawell1}
+	\end{figure}
 	
 \end{document}

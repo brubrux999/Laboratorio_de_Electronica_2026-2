@@ -12,5 +12,7 @@
 *.bcf
 *.xml
 
+*.pdf
+
 # VS Code
 *.vscode/
