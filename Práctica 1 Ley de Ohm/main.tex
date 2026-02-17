@@ -30,8 +30,9 @@
 				
 			{\begin{tcolorbox}[colframe=white, colback=principaldos, arc=8pt]
 				\begin{onecolabstract}
-					Lo que se hizo, lo que se buscaba observar, lo que se observó
-					y conlcusión final.
+					Mediante la aplicación del método de Maxwell para calcular el voltaje y corriente en cada resistencia de un circuito,
+					se buscó observar un comportamiento similar en el laboratorio mediante el armado del mismo circuito en una protoboard,
+					aprendiendo a medir estos valores cuidando a la vez los instrumentos.
 
 					\medskip
 				\end{onecolabstract}
@@ -59,15 +60,19 @@
 	\section{Mediciones y observaciones}
 
     Antes de pasar a las mediciones en el circuito, se realizaron los calculos teóricos para los valores
-	de voltaje, corriente y potencia para cada resistencia, el desarrollo se encuentra en el Apéndice \ref{apx:1}.
+	de voltaje, corriente y potencia para cada resistencia considerando un voltaje en la fuente de $10 V$. El desarrollo se encuentra en
+	el Apéndice \ref{apx:1}.
 
-	Para la medicón de los valores mencionados, se usó un multímetro digital y un par de cables con conexión banana-caiman.\\
+	Para la medicón de los valores mencionados, se usó un multímetro digital y un par de cables con conexión banana-caiman. Es importante mencionar
+	que, antes de encender la fuente DC se debe asegurar que la perilla del voltaje este al mínimo mientra que la de corriente al máximo, posteriormente,
+	se colocó un voltaje de $10 V$.\\
 	Primero se midió la resistencia de cada resistencia para corroborar su valor, posteriormente, para el voltaje, la conexión a cada resistencia
 	fue en paralelo, es decir, en cada "patita" de estas, en cambio, la corriente se midió en serie de modo que se abrió el circuito, ya sea
 	del lado izquierdo o derecho de la resistencia, para incluir el multímetro en este. Finalmente la potencia se obtuvo multiplicando el voltaje
-	por la corriente. Los resultados se muestran en la siguiente tabla:
+	por la corriente.\\
+	Los resultados se muestran en la Tabla \ref{tab:circuito1}.
 
-	\begin{table}[h!]
+	\begin{table}[!ht]
 		\centering
 		\begin{tabular}{|c|c|c|c|c|}
 		\hline
@@ -85,21 +90,23 @@
 		R11 & 555   & 0.2         & 0.3      & 0.06         \\ \hline
 		\end{tabular}
 		\caption{
-			Tabla con los valores medidos de resistencia, voltaje, corriente y
+			Valores medidos de resistencia, voltaje, corriente y
 			potencia en cada resistencia, respectivamente, del circuito mostrado en el Esquema \ref{fig:circuito1}.
 		}
 		\label{tab:circuito1}
 	\end{table}
 
 	\section{Resultados y Discución}
-
-    Gráficas, comparaciones y análisis de esto; coincidencias y/o discrepancias con la teoría,
-	posibles errores.
-	AUNQUE SE USARON DIFERENTES RESISTENCIAS (TEORICO Y EXPERIMENTAL) SE OBTUVO UN ORDENAMIENTO SIMILAR, VALORES ALTOS EN LAS PRIMERAS QUE DIMUNUYE A MEDIDA QU EL CIRCUITO AVANZA
+ 
+	Podemos observar que, aunque se usaron distintos valores de resistencias para los calculos teóricos y las mediciones experimentales,
+	se observa claramente una tendencia en la disminución de la potencia de las resistencias a medida que se alejan de la fuente. Asimismo,
+	se obtuvieron valores casi idénticos en aquellas resistencias que solo se encontraban en una sola malla del circuito, como $R1$ y $R3$ o $R8$ y $R9$.
 
 	\section{Conclusión}
 
-    Breve texto del aprendizaje final.
+    La medición del voltaje y corriente y el cálculo de la potencia para cada resistencia de un circuito resultó ser semejante a los cálculos teóricos
+	del mismo circuito. Se aprendió que el voltaje se mide en paralelo mientras que la corriente en serie, así como que la fuente DC se debe encender
+	con el voltaje al mínimo y la corriente al máximo, de este modo se cuida de manera correcta los intrumentos del laboratorio.
 
 	% \printbibliography
 
